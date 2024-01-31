@@ -14,7 +14,7 @@ public class MapStreamExample {
 
         // Filtering the map based on a condition (e.g., age greater than 25)
         Map<String, Integer> filteredMap = ageMap.entrySet().stream()
-                .filter(entry -> entry.getValue() > 25)
+                .filter(entry -> entry.getValue() > 24)
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
 
         System.out.println(filteredMap);
